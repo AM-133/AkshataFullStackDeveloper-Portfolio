@@ -1,0 +1,29 @@
+.orbit-icon {
+  position: relative;
+}
+
+.orbit-icon .tooltip-label {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(24, 24, 27, 0.95);
+  color: #fff;
+  border: 1px solid rgba(168, 85, 247, 0.35);
+  border-radius: 12px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 9999;
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.25);
+}
+
+.orbit-icon:hover .tooltip-label {
+  visibility: visible;
+  opacity: 1;
+}
