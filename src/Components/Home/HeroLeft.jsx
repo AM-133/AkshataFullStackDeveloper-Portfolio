@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import confetti from "canvas-confetti";
 import { CoolMode } from "./../ui/cool-mode";
+import { scroller } from "react-scroll";
 
 export default function HeroLeft() {
   const buttonRef = useRef(null);
@@ -84,7 +85,14 @@ const handleDownloadCV = () => {
 
         {/* Secondary — View My Work */}
        <CoolMode>
-  <button className="rounded-xl border border-violet-500/40 px-7 py-3 text-sm font-semibold text-violet-700 transition-all duration-300 hover:scale-[1.04] hover:border-violet-500 hover:bg-violet-50 dark:text-violet-400 dark:hover:bg-violet-500/10 lg:px-9 lg:text-base">
+  <button className="rounded-xl border border-violet-500/40 px-7 py-3 text-sm font-semibold text-violet-700 transition-all duration-300 hover:scale-[1.04] hover:border-violet-500 hover:bg-violet-50 dark:text-violet-400 dark:hover:bg-violet-500/10 lg:px-9 lg:text-base"
+    onClick={() =>
+      scroller.scrollTo("work", {
+        smooth: true,
+        duration: 500,
+        offset: -100,
+      })
+    }>
     View My Work
   </button>
 </CoolMode>

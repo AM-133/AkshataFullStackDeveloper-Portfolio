@@ -28,7 +28,7 @@ const cards = [
 
 export default function ContactCards() {
   return (
-    <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-4 mt-14">
+    <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-1 mt-5">
       {cards.map((card) => (
         <div
           key={card.title}
@@ -41,18 +41,18 @@ export default function ContactCards() {
   bg-white
   dark:bg-white/5
 
-  p-4
+  p-1
   flex
   items-center
-  gap-3
+  gap-4
 
   backdrop-blur-xl
 "
         >
           <div
             className="
-              w-12
-              h-12
+              w-8
+              h-8
               rounded-full
               bg-gradient-to-r
               from-violet-600
@@ -61,13 +61,14 @@ export default function ContactCards() {
               items-center
               justify-center
               text-white
+              
             "
           >
             {card.icon}
           </div>
 
           <div>
-            <h4 className="font-semibold dark:text-white">
+            <h4 className="font-semibold dark:text-white text-sm">
               {card.title}
             </h4>
 

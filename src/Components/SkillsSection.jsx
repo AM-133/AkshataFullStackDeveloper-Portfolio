@@ -2,28 +2,28 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const skills = [
-    { name: "HTML", x: -290, y: -190, depth: 0.4 },
+    { name: "HTML", x: -290, y: -220, depth: 0.4 },
     { name: "CSS", x: -160, y: -240, depth: 0.6 },
-    { name: "PHP", x: 0, y: -220, depth: 0.8 },
-    { name: "PYTHON", x: 180, y: -240, depth: 1.0 },
+    { name: "PHP", x: -40, y: -240, depth: 0.8 },
+    { name: "PYTHON", x: 80, y: -240, depth: 1.0 },
 
     { name: "MYSQL", x: -380, y: -120, depth: 1.4 },
-    { name: "DJANGO", x: 260, y: -140, depth: 1.2 },
+    { name: "DJANGO", x: 200, y: -210, depth: 1.2 },
 
-    { name: "REACTJS", x: -360, y: 0, depth: 1.6 },
-    { name: "POSTGRESS", x: 220, y: -20, depth: 1.3 },
+    { name: "REACTJS", x: -310, y: 65, depth: 1.6 },
+    { name: "POSTGRESS", x: 250, y: 10, depth: 1.3 },
 
-    { name: "NEXTJS", x: -270, y: 100, depth: 0.9 },
-    { name: "MATERIAL UI", x: 200, y: 100, depth: 1.1 },
+    { name: "NEXTJS", x: -200, y: 100, depth: 0.9 },
+    { name: "MATERIAL UI", x: 180, y: 100, depth: 1.1 },
 
-    { name: "TAILWIND", x: -140, y: 80, depth: 0.7 },
-    { name: "CANVAS", x: -40, y: 220, depth: 1.5 },
+    { name: "TAILWIND", x: -80, y: 110, depth: 0.7 },
+    { name: "CANVAS", x: 260, y: -110, depth: 1.5 },
 
     { name: "JAVASCRIPT", x: -120, y: 320, depth: 1.8 },
     { name: "GIT", x: 40, y: 110, depth: 0.5 },
 
     { name: "TYPESCRIPT", x: 180, y: 320, depth: 1.7 },
-    { name: "BOOTSTRAP", x: -190, y: 200, depth: 1.0 },
+    { name: "BOOTSTRAP", x: -400, y: -10, depth: 1.0 },
 ];
 const isMobile = window.innerWidth < 768;
 
@@ -158,9 +158,9 @@ export default function SkillsSection() {
                                 const angle = (index / skills.length) * Math.PI * 2;
                                 const radius =
                                     window.innerWidth < 640
-                                        ? 140
+                                        ? 240
                                         : window.innerWidth < 1024
-                                            ? 240
+                                            ? 340
                                             : 360;
 
                                 const x = Math.cos(angle) * radius;

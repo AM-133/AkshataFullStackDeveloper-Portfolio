@@ -149,6 +149,7 @@ const handleSubmit = (e) => {
     dark:text-white
     dark:placeholder:text-gray-500
   "
+   required
 />
 
           <input
@@ -176,6 +177,7 @@ const handleSubmit = (e) => {
     dark:text-white
     dark:placeholder:text-gray-500
   "
+   required
           />
         </div>
 
@@ -203,6 +205,7 @@ const handleSubmit = (e) => {
     dark:text-white
     dark:placeholder:text-gray-500
   "
+   required
         />
 
         <textarea
@@ -230,6 +233,7 @@ const handleSubmit = (e) => {
     dark:text-white
     dark:placeholder:text-gray-500
   "
+   required
         />
  <CoolMode>
         <button

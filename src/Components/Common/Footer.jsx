@@ -33,7 +33,7 @@ const socialLinks = [
 
 export default function Footer() {
     return (
-        <footer className="border-t border-slate-200 bg-white px-6 py-12 transition-colors duration-300 dark:border-zinc-800 dark:bg-black">
+        <footer className="border-t border-slate-200 bg-white px-3 py-3 transition-colors duration-300 dark:border-zinc-800 dark:bg-black">
             <div className="mx-auto flex max-w-6xl flex-col items-center">
 
                 {/* Logo */}
