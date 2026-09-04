@@ -31,3 +31,4 @@ export const certificates = [
     image: cert3,
   },
 ];
+
