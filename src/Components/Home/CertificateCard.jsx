@@ -7,16 +7,12 @@ const CertificateCard = ({ item, onImageClick }) => {
         p-2
         border
         transition-all duration-300
-
         bg-white
         border-slate-200
-
         dark:bg-[#111827]
         dark:border-[#1f2937]
-
         hover:-translate-y-1
         hover:shadow-lg
-
         dark:hover:border-[#374151]
         dark:hover:shadow-[0_10px_30px_rgba(0,0,0,0.35)]
       "
@@ -44,19 +40,12 @@ const CertificateCard = ({ item, onImageClick }) => {
           className="
             text-lg
             font-medium
-
             text-slate-900
             dark:text-white
           "
         >
           {item.title}
         </h3>
-
-        {/*
-        <p className="mt-1 text-sm text-slate-500 dark:text-gray-400">
-          {item.issuer} • {item.year}
-        </p>
-        */}
       </div>
     </div>
   );
