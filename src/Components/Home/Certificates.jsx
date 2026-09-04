@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { certificates } from "./certificatesData";
+import CertificatesData from "./CertificatesData";
 import CertificateCard from "./CertificateCard";
 
 const tabs = ["all", "technical", "other"];
@@ -8,12 +8,12 @@ const Certificates = () => {
   const [activeTab, setActiveTab] = useState("all");
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const filteredCertificates =
-    activeTab === "all"
-      ? certificates
-      : certificates.filter(
-          (item) => item.category === activeTab
-        );
+ const filteredCertificates =
+  activeTab === "all"
+    ? CertificatesData
+    : CertificatesData.filter(
+        (item) => item.category === activeTab
+      );
 
   return (
     <section
