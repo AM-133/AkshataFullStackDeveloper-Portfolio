@@ -49,17 +49,17 @@ export default function FloatingButtons() {
   const socials = [
     {
       icon: FaLinkedinIn,
-      link: "https://linkedin.com/in/your-linkedin",
+      link: "",
       angle: 180,
     },
     {
       icon: FaGithub,
-      link: "https://github.com/your-github",
+      link: "https://github.com/Akshata133",
       angle: 225,
     },
     {
       icon: FaInstagram,
-      link: "https://instagram.com/your-instagram",
+      link: "",
       angle: 270,
     },
   ];

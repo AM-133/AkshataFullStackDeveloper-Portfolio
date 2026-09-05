@@ -66,7 +66,7 @@ export default function Navbar() {
         top: scrolled ? 20 : 0,
       }}
       transition={{ duration: 0.3 }}
-      className={`fixed left-1/2 top-0 z-50 w-full -translate-x-1/2 px-4 ${
+      className={`fixed left-1/2 top-0 z-100 w-full -translate-x-1/2 px-4 ${
   scrolled
     ? "bg-transparent"
     : darkMode

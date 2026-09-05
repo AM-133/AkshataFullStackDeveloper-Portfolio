@@ -16,17 +16,17 @@ const navLinks = [
 const socialLinks = [
     {
         icon: FaLinkedin,
-        href: "https://linkedin.com/in/your-linkedin",
+        href: "",
         label: "LinkedIn",
     },
     {
         icon: FaGithub,
-        href: "https://github.com/your-github",
+        href: "https://github.com/Akshata133",
         label: "GitHub",
     },
     {
         icon: FaInstagram,
-        href: "https://instagram.com/your-instagram",
+        href: "",
         label: "Instagram",
     },
 ];

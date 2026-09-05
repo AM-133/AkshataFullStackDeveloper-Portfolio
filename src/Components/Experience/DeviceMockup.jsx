@@ -85,24 +85,33 @@ export default function DeviceMockup() {
     draggable="false"
   />
 
-  <div
+ <div
+  className="
+    absolute
+    left-[29%]
+    top-[5%]
+    h-[89%]
+    w-[42%]
+    overflow-hidden
+    rounded-[28px]
+    z-10
+  "
+>
+  <iframe
+    src="https://akshata-full-stack-developer-portfo-ten.vercel.app/"
+    title="Mobile Preview"
     className="
       absolute
-      left-[29%]
-      top-[5%]
-      h-[89%]
-      w-[42%]
-      overflow-hidden
-      rounded-[28px]
-      z-10
+      border-0
     "
-  >
-    <img
-      src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=390&h=844&fit=crop"
-      alt="Mobile Preview"
-      className="h-full w-full object-cover"
-    />
-  </div>
+    style={{
+      width: "390px",
+      height: "844px",
+      transform: "scale(0.45)",
+      transformOrigin: "top left",
+    }}
+  />
+</div>
   </motion.div>
 </motion.div>
     </div>
