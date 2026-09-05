@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function IntroScreen() {
   // Experience start date
-  const experienceStartDate = new Date("2022-09-18");
+const experienceStartDate = new Date("2023-03-18");
 
   const calculateExperience = () => {
     const today = new Date();

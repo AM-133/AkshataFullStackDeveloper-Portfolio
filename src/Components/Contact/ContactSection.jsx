@@ -9,7 +9,7 @@ export default function ContactSection() {
       className="
         relative
         overflow-hidden
-        py-20
+        py-10
         bg-white
         dark:bg-[#080112]
       "

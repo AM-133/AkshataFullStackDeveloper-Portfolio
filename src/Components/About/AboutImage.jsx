@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import image from './../../assets/akshata.jpeg';
 
 export default function AboutImage() {
   const ref = useRef(null);
@@ -107,7 +108,7 @@ export default function AboutImage() {
         "
       >
         <img
-          src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=900"
+          src={image}
           alt="About"
           className="h-full w-full object-cover"
         />

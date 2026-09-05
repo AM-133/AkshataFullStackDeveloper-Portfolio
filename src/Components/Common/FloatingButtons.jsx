@@ -49,7 +49,7 @@ export default function FloatingButtons() {
   const socials = [
     {
       icon: FaLinkedinIn,
-      link: "",
+      link: "https://www.linkedin.com/in/akshata-more-69b9a2219/",
       angle: 180,
     },
     {
@@ -59,7 +59,7 @@ export default function FloatingButtons() {
     },
     {
       icon: FaInstagram,
-      link: "",
+      link: "https://www.instagram.com/_am__133?igsi=MTVmbWoyODhjbzRvNw==",
       angle: 270,
     },
   ];

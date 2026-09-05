@@ -20,7 +20,7 @@ const Certificates = () => {
     <section
       id="certificates"
       className="
-        py-20
+        py-10
         px-4
         bg-white
         dark:bg-[#0b1120]

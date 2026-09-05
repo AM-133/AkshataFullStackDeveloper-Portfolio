@@ -16,7 +16,7 @@ const navLinks = [
 const socialLinks = [
     {
         icon: FaLinkedin,
-        href: "",
+        href: "https://www.linkedin.com/in/akshata-more-69b9a2219/",
         label: "LinkedIn",
     },
     {
@@ -26,7 +26,7 @@ const socialLinks = [
     },
     {
         icon: FaInstagram,
-        href: "",
+        href: "https://www.instagram.com/_am__133?igsi=MTVmbWoyODhjbzRvNw==",
         label: "Instagram",
     },
 ];

@@ -7,23 +7,23 @@ const skills = [
     { name: "PHP", x: -40, y: -240, depth: 0.8 },
     { name: "PYTHON", x: 80, y: -240, depth: 1.0 },
 
-    { name: "MYSQL", x: -380, y: -120, depth: 1.4 },
-    { name: "DJANGO", x: 200, y: -210, depth: 1.2 },
+    { name: "MYSQL", x: -400, y: -150, depth: 1.4 },
+    { name: "DJANGO", x: 190, y: -200, depth: 1.2 },
 
     { name: "REACTJS", x: -310, y: 65, depth: 1.6 },
     { name: "POSTGRESS", x: 250, y: 10, depth: 1.3 },
 
     { name: "NEXTJS", x: -200, y: 100, depth: 0.9 },
-    { name: "MATERIAL UI", x: 180, y: 100, depth: 1.1 },
+    { name: "MATERIAL UI", x: 160, y: 80, depth: 1.1 },
 
     { name: "TAILWIND", x: -80, y: 110, depth: 0.7 },
-    { name: "CANVAS", x: 260, y: -110, depth: 1.5 },
+    { name: "CANVAS", x: 270, y: -110, depth: 1.5 },
 
-    { name: "JAVASCRIPT", x: -120, y: 320, depth: 1.8 },
+    { name: "JAVASCRIPT", x: -500, y: -70, depth: 1.8 },
     { name: "GIT", x: 40, y: 110, depth: 0.5 },
 
-    { name: "TYPESCRIPT", x: 180, y: 320, depth: 1.7 },
-    { name: "BOOTSTRAP", x: -400, y: -10, depth: 1.0 },
+    { name: "TYPESCRIPT", x: 370, y: -40, depth: 1.7 },
+    { name: "BOOTSTRAP", x: -415, y: 10, depth: 1.0 },
 ];
 const isMobile = window.innerWidth < 768;
 
