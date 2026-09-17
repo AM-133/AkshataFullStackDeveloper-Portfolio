@@ -58,77 +58,77 @@ const Certificates = () => {
               key={tab}
               type="button"
               onClick={() => setActiveTab(tab)}
-            className={`
-  px-5
-  py-2
-  rounded-full
-  text-sm
-  font-medium
-  capitalize
-  transition-all
-  duration-300
-  ${
-    activeTab === tab
-      ? "bg-gradient-to-r from-violet-500 via-fuchsia-500 to-indigo-500 text-white"
-      : "bg-slate-100 text-slate-600 hover:bg-slate-200 dark:bg-[#111827] dark:text-slate-300 dark:hover:bg-[#1f2937]"
-  }
-`}
-            >
-              {tab}
-            </button>
-          ))}
-        </div>
+                  className={`
+        px-5
+        py-2
+        rounded-full
+        text-sm
+        font-medium
+        capitalize
+        transition-all
+        duration-300
+        ${
+          activeTab === tab
+            ? "bg-gradient-to-r from-violet-500 via-fuchsia-500 to-indigo-500 text-white"
+            : "bg-slate-100 text-slate-600 hover:bg-slate-200 dark:bg-[#111827] dark:text-slate-300 dark:hover:bg-[#1f2937]"
+        }
+      `}
+                  >
+                    {tab}
+                  </button>
+                ))}
+              </div>
 
-        {/* Certificate Cards */}
-        <div className="flex flex-wrap justify-center gap-8 mt-5">
-          {filteredCertificates.map((item) => (
-            <CertificateCard
-              key={item.id}
-              item={item}
-              onImageClick={setSelectedImage}
-            />
-          ))}
-        </div>
+              {/* Certificate Cards */}
+              <div className="flex flex-wrap justify-center gap-8 mt-5">
+                {filteredCertificates.map((item) => (
+                  <CertificateCard
+                    key={item.id}
+                    item={item}
+                    onImageClick={setSelectedImage}
+                  />
+                ))}
+              </div>
 
-        {/* No certificates message */}
-        {filteredCertificates.length === 0 && (
-          <div className="text-center py-10">
-            <p className="text-slate-500 dark:text-slate-400">
-              No certificates found.
-            </p>
-          </div>
-        )}
+              {/* No certificates message */}
+              {filteredCertificates.length === 0 && (
+                <div className="text-center py-10">
+                  <p className="text-slate-500 dark:text-slate-400">
+                    No certificates found.
+                  </p>
+                </div>
+              )}
 
-        {/* Image Modal */}
-        {selectedImage && (
-          <div
-            className="
-              fixed
-              inset-0
-              z-50
-              flex
-              items-center
-              justify-center
-              bg-black/80
-              p-4
-            "
-            onClick={() => setSelectedImage(null)}
-          >
-            <div
-              className="relative max-w-5xl max-h-[90vh]"
-              onClick={(e) => e.stopPropagation()}
-            >
-              {/* Close Button */}
-              <button
-                type="button"
-                onClick={() => setSelectedImage(null)}
-                className="
-                  absolute
-                  -top-4
-                  -right-4
-                  w-10
-                  h-10
-                  rounded-full
+              {/* Image Modal */}
+              {selectedImage && (
+                <div
+                  className="
+                    fixed
+                    inset-0
+                    z-50
+                    flex
+                    items-center
+                    justify-center
+                    bg-black/80
+                    p-4
+                  "
+                  onClick={() => setSelectedImage(null)}
+                >
+                  <div
+                    className="relative max-w-5xl max-h-[90vh]"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    {/* Close Button */}
+                    <button
+                      type="button"
+                      onClick={() => setSelectedImage(null)}
+                      className="
+                        absolute
+                        -top-4
+                        -right-4
+                        w-10
+                        h-10
+                        rounded-full
                   bg-white
                   text-black
                   text-xl
