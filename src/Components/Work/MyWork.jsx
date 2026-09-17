@@ -7,39 +7,36 @@ const projects = [
     id: "01",
     name: "ProParamedics CAD",
     description:
-      "A complete event and resource management platform for managing event requests, medical staff, vehicles, scheduling, bookings and dispatch operations.",
-    tech: ["React", "PHP", "MySQL", "REST API"],
+      "Computer-Aided Dispatch platform with real-time ambulance tracking, dispatch updates and performance monitoring across 4+ large-scale EMS deployments.",
+    tech: ["React", "PHP", "Django REST API", "WebSocket"],
     category: "Web Application",
     type: "Full Stack Development",
   },
-
   {
     id: "02",
     name: "EMS Analytics Dashboard",
     description:
-      "Real-time emergency medical service analytics dashboard with interactive maps, KPIs, ambulance tracking and performance metrics.",
-    tech: ["React", "MUI", "WebSocket", "Leaflet"],
+      "Real-time EMS analytics dashboard with role-based access, dynamic filters and live performance metrics built for high-frequency data streams.",
+    tech: ["React", "MUI", "WebSocket", "REST API"],
     category: "Analytics Dashboard",
     type: "Frontend Development",
   },
-
   {
     id: "03",
-    name: "Hospital Monitor",
+    name: "Disaster Management System",
     description:
-      "A monitoring dashboard designed to visualize hospital and emergency service data with real-time updates and interactive analytics.",
-    tech: ["React", "Charts", "WebSocket", "REST API"],
-    category: "Monitoring System",
-    type: "Frontend Development",
+      "Responsive incident management and responder coordination modules, backed by real-time tracking via REST APIs and WebSockets.",
+    tech: ["React", "Django REST Framework", "WebSocket", "REST API"],
+    category: "Admin Dashboard",
+    type: "Full Stack Development",
   },
-
   {
     id: "04",
-    name: "DMS Admin Panel",
+    name: "ALF Platform",
     description:
-      "A responsive administration panel with REST APIs for managing application data, users and operational workflows.",
-    tech: ["React", "Django", "REST API", "PostgreSQL"],
-    category: "Admin Dashboard",
+      "Assisted Living Facility platform with end-to-end PHP backend for care and administrative workflows, plus an admin panel with compliance features.",
+    tech: ["PHP", "MySQL", "REST API"],
+    category: "Healthcare Platform",
     type: "Full Stack Development",
   },
 ];
@@ -51,10 +48,7 @@ export default function MyWork() {
       className="
         relative
         overflow-hidden
-        px-6
         py-14
-        md:px-10
-        lg:px-20
         bg-white
         dark:bg-slate-950
       "
@@ -89,7 +83,7 @@ export default function MyWork() {
         "
       />
 
-      <div className="relative mx-auto max-w-7xl">
+      <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -351,16 +345,16 @@ export default function MyWork() {
 
               {/* Bottom */}
               <div className="relative mt-7 flex items-center justify-between">
-              <span
-  className="
-    text-sm
-    font-medium
-    text-slate-500
-    dark:text-gray-500
-  "
->
-  {project.type}
-</span>
+                <span
+                  className="
+                    text-sm
+                    font-medium
+                    text-slate-500
+                    dark:text-gray-500
+                  "
+                >
+                  {project.type}
+                </span>
 
                 <div
                   className="

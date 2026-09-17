@@ -15,7 +15,7 @@ export default function About() {
         duration-300
       "
     >
-      <div className="mx-auto grid max-w-6xl items-center gap-5 px-7 lg:grid-cols-2">
+      <div className="mx-auto grid w-full max-w-7xl items-center gap-5 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
         <AboutImage />
         <AboutContent />
       </div>

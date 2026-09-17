@@ -14,17 +14,17 @@ export default function ContactSection() {
         dark:bg-[#080112]
       "
     >
-     <div className="max-w-6xl mx-auto px-6 lg:px-12">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
 
-       <div
-  className="
-    grid
-    lg:grid-cols-[1fr_0.9fr]
-    gap-10
-    xl:gap-16
-    items-center
-  "
->
+        <div
+          className="
+            grid
+            items-center
+            gap-10
+            lg:grid-cols-[1fr_0.9fr]
+            xl:gap-16
+          "
+        >
           <ContactForm />
           <ContactIllustration />
         </div>

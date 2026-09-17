@@ -37,7 +37,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="py-1 px-14 bg-white dark:bg-[#09090B]"
+      className="px-4 py-1 sm:px-6 lg:px-8 bg-white dark:bg-[#09090B]"
     >
       <div className="mx-auto max-w-7xl">
 
@@ -53,7 +53,7 @@ export default function Experience() {
         </div>
 
         {/* Layout */}
-        <div className="grid gap-10 lg:grid-cols-[40%_60%]">
+        <div className="grid gap-6 lg:grid-cols-[42%_58%]">
 
           {/* LEFT SIDE TIMELINE */}
           <div className="relative">

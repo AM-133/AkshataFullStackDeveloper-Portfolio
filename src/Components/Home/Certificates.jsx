@@ -21,14 +21,13 @@ const Certificates = () => {
       id="certificates"
       className="
         py-10
-        px-4
         bg-white
         dark:bg-[#0b1120]
         transition-colors
         duration-300
       "
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
 
         {/* Heading */}
         <div className="text-center mb-10">
@@ -36,14 +35,18 @@ const Certificates = () => {
             My Achievements
           </p>
 
-          <h2 className="
-            mt-2
-            text-4xl
-            md:text-5xl
-            font-semibold
-            text-slate-900
-            dark:text-white
-          ">
+          {/* <h2
+            className="
+              mt-2
+              text-4xl
+              md:text-5xl
+              font-semibold
+              text-slate-900
+              dark:text-white
+            "
+          > */}
+          <h2 className="bg-gradient-to-r from-violet-500 via-fuchsia-500 to-indigo-500 bg-clip-text text-4xl font-semibold text-transparent md:text-5xl">
+
             Certificates
           </h2>
         </div>
@@ -55,21 +58,21 @@ const Certificates = () => {
               key={tab}
               type="button"
               onClick={() => setActiveTab(tab)}
-              className={`
-                px-5
-                py-2
-                rounded-full
-                text-sm
-                font-medium
-                capitalize
-                transition-all
-                duration-300
-                ${
-                  activeTab === tab
-                    ? "bg-slate-900 text-white dark:bg-white dark:text-slate-900"
-                    : "bg-slate-100 text-slate-600 hover:bg-slate-200 dark:bg-[#111827] dark:text-slate-300 dark:hover:bg-[#1f2937]"
-                }
-              `}
+            className={`
+  px-5
+  py-2
+  rounded-full
+  text-sm
+  font-medium
+  capitalize
+  transition-all
+  duration-300
+  ${
+    activeTab === tab
+      ? "bg-gradient-to-r from-violet-500 via-fuchsia-500 to-indigo-500 text-white"
+      : "bg-slate-100 text-slate-600 hover:bg-slate-200 dark:bg-[#111827] dark:text-slate-300 dark:hover:bg-[#1f2937]"
+  }
+`}
             >
               {tab}
             </button>
