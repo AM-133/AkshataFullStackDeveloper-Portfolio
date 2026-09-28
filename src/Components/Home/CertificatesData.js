@@ -1,6 +1,6 @@
 import cert1 from "../../assets/React_JS-Certificate.jpg";
 import cert2 from "../../assets/Certificates.jpg";
-import cert3 from "../../assets/React_JS-Certificate.jpg";
+import cert3 from "../../assets/EMP.jpg";
 
 export const certificates = [
   {
