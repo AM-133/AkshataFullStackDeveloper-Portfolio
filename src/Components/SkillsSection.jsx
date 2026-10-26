@@ -1,29 +1,30 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useEffect, useState } from "react";
 
+
 const skills = [
-    { name: "HTML", x: -0.72, y: -0.55, depth: 0.4 },
-    { name: "CSS", x: -0.38, y: -0.78, depth: 0.6 },
-    { name: "PHP", x: 0.0, y: -0.92, depth: 0.8 },
-    { name: "PYTHON", x: 0.38, y: -0.78, depth: 1.0 },
+    { name: "HTML", x: -0.44, y: -0.75, depth: 0.4 },
+    { name: "CSS", x: -0.15, y: -0.83, depth: 0.6 },
+    { name: "PHP", x: 0.15, y: -0.82, depth: 0.8 },
+    { name: "PYTHON", x: 0.45, y: -0.72, depth: 1.0 },
 
-    { name: "MYSQL", x: -0.82, y: -0.20, depth: 1.4 },
-    { name: "DJANGO", x: 0.72, y: -0.55, depth: 1.2 },
+    { name: "MYSQL", x: -0.66, y: -0.50, depth: 1.4 },
+    { name: "DJANGO", x: 0.68, y: -0.48, depth: 1.2 },
 
-    { name: "REACTJS", x: -0.92, y: 0.18, depth: 1.6 },
-    { name: "POSTGRESS", x: 0.92, y: 0.18, depth: 1.3 },
+    { name: "BOOTSTRAP", x: -0.78, y: -0.18, depth: 1.0 },
+    { name: "JAVASCRIPT", x: -0.78, y: 0.18, depth: 1.8 },
+    { name: "REACTJS", x: -0.68, y: 0.50, depth: 1.6 },
 
-    { name: "NEXTJS", x: -0.72, y: 0.55, depth: 0.9 },
-    { name: "MATERIAL UI", x: 0.72, y: 0.55, depth: 1.1 },
+    { name: "TYPESCRIPT", x: 0.78, y: -0.15, depth: 1.7 },
+    { name: "POSTGRESS", x: 0.78, y: 0.20, depth: 1.3 },
 
-    { name: "TAILWIND", x: -0.38, y: 0.78, depth: 0.7 },
-    { name: "CANVAS", x: 0.38, y: 0.78, depth: 1.5 },
-
-    { name: "JAVASCRIPT", x: -0.55, y: -0.02, depth: 1.8 },
-    { name: "GIT", x: 0.0, y: 0.92, depth: 0.5 },
-    { name: "TYPESCRIPT", x: 0.82, y: -0.20, depth: 1.7 },
-    { name: "BOOTSTRAP", x: -0.82, y: -0.20, depth: 1.0 },
+    { name: "NEXTJS", x: -0.48, y: 0.78, depth: 0.9 },
+    { name: "TAILWIND", x: -0.18, y: 0.89, depth: 0.7 },
+    { name: "GIT", x: 0.15, y: 0.88, depth: 0.5 },
+    { name: "CANVAS", x: 0.45, y: 0.78, depth: 1.5 },
+    { name: "MATERIAL UI", x: 0.68, y: 0.55, depth: 1.1 },
 ];
+
 
 export default function SkillsSection() {
     const mouseX = useMotionValue(0);
@@ -74,32 +75,32 @@ export default function SkillsSection() {
 
     const responsiveSettings = {
         mobile: {
-            bubbleSize: "w-14 h-14",
-            textSize: "text-[8px]",
-            diamondWidth: 145,
-            diamondHeight: 180,
-            centerPadding: "px-8 py-3",
+          bubbleSize: "w-16 h-16",
+          textSize: "text-[9px]",
+           diamondWidth: 165,
+            diamondHeight: 195,
+            centerPadding: "px-10 py-4",
             headingSize: "text-2xl",
             sectionHeight: "h-[430px]",
         },
         tablet: {
-            bubbleSize: "w-20 h-20",
-            textSize: "text-[10px]",
-            diamondWidth: 250,
-            diamondHeight: 260,
-            centerPadding: "px-14 py-5",
+           bubbleSize: "w-24 h-24",
+           textSize: "text-xs",
+            diamondWidth: 280,
+            diamondHeight: 290,                         
+            centerPadding: "px-16 py-6",
             headingSize: "text-4xl",
             sectionHeight: "h-[560px]",
         },
-        desktop: {
-            bubbleSize: "w-28 h-28",
-            textSize: "text-sm",
-            diamondWidth: 310,
-            diamondHeight: 290,
-            centerPadding: "px-20 py-6",
-            headingSize: "text-6xl",
-            sectionHeight: "h-[650px]",
-        },
+    desktop: {
+    bubbleSize: "w-24 h-24",
+    textSize: "text-sm",
+    diamondWidth: 330,
+    diamondHeight: 290,
+    centerPadding: "px-20 py-5",
+    headingSize: "text-5xl",
+    sectionHeight: "h-[600px]",
+},
     };
 
     const settings = responsiveSettings[screenSize];
@@ -153,7 +154,7 @@ export default function SkillsSection() {
                                 ],
                             }}
                             transition={{ duration: 3, repeat: Infinity }}
-                            className={`relative flex items-center justify-center ${settings.centerPadding} bg-white/80 dark:bg-black/40 backdrop-blur-md border-y-2 border-violet-500/50 dark:border-fuchsia-500/50`}
+                            className={`relative flex items-center justify-center ${settings.centerPadding} bg-white dark:bg-[#080112] backdrop-blur-md border-y-2 border-violet-500/50 dark:border-fuchsia-500/50`}
                         >
                             {/* Left Arrow Notch `<` */}
                             <div className="absolute -left-5 top-1/2 -translate-y-1/2 w-0 h-0 border-y-[20px] border-y-transparent border-r-[20px] border-r-violet-500/50 dark:border-r-fuchsia-500/50" />

@@ -105,7 +105,7 @@ const Certificates = () => {
                   className="
                     fixed
                     inset-0
-                    z-50
+                     z-[9999]
                     flex
                     items-center
                     justify-center

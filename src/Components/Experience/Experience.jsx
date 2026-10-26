@@ -37,9 +37,11 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="px-4 py-1 sm:px-6 lg:px-8 bg-white dark:bg-[#09090B]"
+      className="py-1 bg-white dark:bg-[#09090B]"
     >
-      <div className="mx-auto max-w-7xl">
+      
+<div className="mx-auto w-full max-w-6xl px-5 sm:px-8">
+
 
         {/* Heading */}
         <div className="mb-16 text-center">

@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import image from './../../assets/akshata.jpeg';
+import image from './../../assets/Akshata More - IT Department.jpg';
 
 export default function AboutImage() {
   const ref = useRef(null);
