@@ -358,7 +358,7 @@ export default function MyWork() {
                   {project.type}
                 </span>
 
-                <div
+                {/* <div
                   className="
                     flex
                     items-center
@@ -378,7 +378,7 @@ export default function MyWork() {
                       fontSize: 17,
                     }}
                   />
-                </div>
+                </div> */}
               </div>
 
               {/* Bottom Gradient Line */}
